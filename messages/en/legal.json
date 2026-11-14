@@ -30,15 +30,21 @@
     "sections": [
       {
         "title": "Controller",
-        "body": ["The controller responsible for data processing on this website is the provider named in the legal notice."]
+        "body": [
+          "The controller responsible for data processing on this website is the provider named in the legal notice."
+        ]
       },
       {
         "title": "Visiting this website",
-        "body": ["When you visit this website, the hosting provider processes technically necessary data – such as IP address, time of the request, page requested and browser type – in order to deliver the page and keep it secure. The legal basis is Art. 6(1)(f) GDPR."]
+        "body": [
+          "When you visit this website, the hosting provider processes technically necessary data – such as IP address, time of the request, page requested and browser type – in order to deliver the page and keep it secure. The legal basis is Art. 6(1)(f) GDPR."
+        ]
       },
       {
-        "title": "No cookies, no analytics",
-        "body": ["This website sets no cookies, integrates no analytics or advertising services and loads no third-party content. Fonts are served from our own server."]
+        "title": "No cookies, no advertising",
+        "body": [
+          "This website sets no cookies and integrates no advertising services. To measure reach we use Vercel Web Analytics: the service works without cookies and records page views only in aggregated form – such as the page viewed, the referring page, country and device type. Individual visitors are not identified. The legal basis is Art. 6(1)(f) GDPR. Fonts are served from our own server."
+        ]
       },
       {
         "title": "Registering your interest and contacting us",
@@ -49,11 +55,15 @@
       },
       {
         "title": "Your rights",
-        "body": ["You have the right of access, rectification, erasure, restriction of processing, data portability and objection (Art. 15 to 21 GDPR). You may also lodge a complaint with a data protection supervisory authority."]
+        "body": [
+          "You have the right of access, rectification, erasure, restriction of processing, data portability and objection (Art. 15 to 21 GDPR). You may also lodge a complaint with a data protection supervisory authority."
+        ]
       },
       {
         "title": "Using Lisa",
-        "body": ["Separate privacy information applies to conversations with Lisa and to personal memory. We will publish it here before the service launches."]
+        "body": [
+          "Separate privacy information applies to conversations with Lisa and to personal memory. We will publish it here before the service launches."
+        ]
       }
     ],
     "hostingTitle": "Hosting",

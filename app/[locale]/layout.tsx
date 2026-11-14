@@ -3,6 +3,7 @@ import {Bricolage_Grotesque, Hanken_Grotesk} from 'next/font/google';
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {getMessages, getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
+import {Analytics} from '@vercel/analytics/next';
 import {routing} from '@/i18n/routing';
 import {SITE_URL} from '@/lib/site-config';
 import {brandName} from '@/lib/seo';
@@ -107,6 +108,9 @@ export default async function LocaleLayout({
           <SiteHeader />
           <main id="main">{children}</main>
           <SiteFooter />
+          {/* Vercel Web Analytics: cookieless, aggregated page views. It only
+              reports from a Vercel deployment; locally it does nothing. */}
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>

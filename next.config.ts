@@ -33,7 +33,9 @@ const nextConfig: NextConfig = {
     const dev = process.env.NODE_ENV === 'development';
     const csp = [
       "default-src 'self'",
-      `script-src 'self' 'unsafe-inline'${dev ? " 'unsafe-eval'" : ''}`,
+      // In development Vercel Analytics loads a debug script from its own host;
+      // in production it is served from this origin (/_vercel/insights).
+      `script-src 'self' 'unsafe-inline'${dev ? " 'unsafe-eval' https://va.vercel-scripts.com" : ''}`,
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data:",
       "font-src 'self'",

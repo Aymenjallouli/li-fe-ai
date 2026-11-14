@@ -30,15 +30,21 @@
     "sections": [
       {
         "title": "Verantwortliche Stelle",
-        "body": ["Verantwortlich für die Datenverarbeitung auf dieser Website ist die im Impressum genannte Anbieterin."]
+        "body": [
+          "Verantwortlich für die Datenverarbeitung auf dieser Website ist die im Impressum genannte Anbieterin."
+        ]
       },
       {
         "title": "Aufruf dieser Website",
-        "body": ["Beim Aufruf dieser Website verarbeitet der Hosting-Anbieter technisch notwendige Daten – etwa IP-Adresse, Zeitpunkt des Abrufs, abgerufene Seite und Browsertyp –, um die Seite auszuliefern und ihre Sicherheit zu gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO."]
+        "body": [
+          "Beim Aufruf dieser Website verarbeitet der Hosting-Anbieter technisch notwendige Daten – etwa IP-Adresse, Zeitpunkt des Abrufs, abgerufene Seite und Browsertyp –, um die Seite auszuliefern und ihre Sicherheit zu gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO."
+        ]
       },
       {
-        "title": "Keine Cookies, keine Analyse-Dienste",
-        "body": ["Diese Website setzt keine Cookies, bindet keine Analyse- oder Werbedienste ein und lädt keine Inhalte von Drittanbietern. Schriften werden von unserem eigenen Server ausgeliefert."]
+        "title": "Keine Cookies, keine Werbung",
+        "body": [
+          "Diese Website setzt keine Cookies und bindet keine Werbedienste ein. Zur Reichweitenmessung nutzen wir Vercel Web Analytics: Der Dienst arbeitet ohne Cookies und erfasst Seitenaufrufe nur in zusammengefasster Form – etwa aufgerufene Seite, verweisende Seite, Land und Gerätetyp. Einzelne Besucherinnen und Besucher werden dabei nicht identifiziert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Schriften werden von unserem eigenen Server ausgeliefert."
+        ]
       },
       {
         "title": "Vormerkung und Kontaktaufnahme",
@@ -49,11 +55,15 @@
       },
       {
         "title": "Ihre Rechte",
-        "body": ["Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15 bis 21 DSGVO). Außerdem können Sie sich bei einer Datenschutzaufsichtsbehörde beschweren."]
+        "body": [
+          "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15 bis 21 DSGVO). Außerdem können Sie sich bei einer Datenschutzaufsichtsbehörde beschweren."
+        ]
       },
       {
         "title": "Die Nutzung von Lisa",
-        "body": ["Für die Gespräche mit Lisa und das persönliche Gedächtnis gelten eigene Datenschutzhinweise. Wir veröffentlichen sie vor dem Start des Angebots an dieser Stelle."]
+        "body": [
+          "Für die Gespräche mit Lisa und das persönliche Gedächtnis gelten eigene Datenschutzhinweise. Wir veröffentlichen sie vor dem Start des Angebots an dieser Stelle."
+        ]
       }
     ],
     "hostingTitle": "Hosting",
