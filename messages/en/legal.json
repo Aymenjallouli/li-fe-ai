@@ -1,0 +1,63 @@
+{
+  "draft": "Draft – this page will be completed and legally reviewed before publication.",
+  "pending": "to be added before publication",
+  "back": "To the home page",
+  "imprint": {
+    "meta": {
+      "title": "Legal notice",
+      "description": "Provider identification for Project L.E.B.E.N."
+    },
+    "title": "Legal notice.",
+    "intro": "Information pursuant to Section 5 of the German Digital Services Act (DDG)",
+    "providerTitle": "Provider",
+    "contactTitle": "Contact",
+    "email": "Email",
+    "phone": "Telephone",
+    "vatTitle": "VAT identification number",
+    "responsibleTitle": "Responsible for content",
+    "techTitle": "Technology partner",
+    "techText": "The avatar technology and the technical platform are provided by Persohap.",
+    "noticeTitle": "About the service",
+    "noticeText": "Project L.E.B.E.N. is a service for general life guidance. It is no substitute for medical or psychotherapeutic advice, diagnosis or treatment."
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy",
+      "description": "Privacy information for the Project L.E.B.E.N. website."
+    },
+    "title": "Privacy.",
+    "intro": "Protecting your personal data matters to us – all the more so for a service that deals with personal matters. This page explains which data this website processes.",
+    "sections": [
+      {
+        "title": "Controller",
+        "body": ["The controller responsible for data processing on this website is the provider named in the legal notice."]
+      },
+      {
+        "title": "Visiting this website",
+        "body": ["When you visit this website, the hosting provider processes technically necessary data – such as IP address, time of the request, page requested and browser type – in order to deliver the page and keep it secure. The legal basis is Art. 6(1)(f) GDPR."]
+      },
+      {
+        "title": "No cookies, no analytics",
+        "body": ["This website sets no cookies, integrates no analytics or advertising services and loads no third-party content. Fonts are served from our own server."]
+      },
+      {
+        "title": "Registering your interest and contacting us",
+        "body": [
+          "When you register your interest through the form, we process the details you provide – name, email address, your selection and an optional message – solely to contact you about Project L.E.B.E.N. The legal basis is your consent under Art. 6(1)(a) GDPR.",
+          "You may withdraw your consent at any time with effect for the future. Your details will then be deleted."
+        ]
+      },
+      {
+        "title": "Your rights",
+        "body": ["You have the right of access, rectification, erasure, restriction of processing, data portability and objection (Art. 15 to 21 GDPR). You may also lodge a complaint with a data protection supervisory authority."]
+      },
+      {
+        "title": "Using Lisa",
+        "body": ["Separate privacy information applies to conversations with Lisa and to personal memory. We will publish it here before the service launches."]
+      }
+    ],
+    "hostingTitle": "Hosting",
+    "hostingText": "This website is hosted by:",
+    "updated": "Last updated: November 2026"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "brand": {
+    "prefix": "Project",
+    "name": "L.E.B.E.N.",
+    "claim": "Talk. Reflect. Act.",
+    "home": "Project L.E.B.E.N. – back to the home page"
+  },
+  "skip": "Skip to content",
+  "nav": {
+    "label": "Main navigation",
+    "lisa": "Lisa",
+    "method": "Method",
+    "topics": "Topics",
+    "pricing": "Pricing",
+    "about": "About",
+    "safety": "Safety",
+    "faq": "FAQ",
+    "register": "Register",
+    "imprint": "Legal notice",
+    "privacy": "Privacy",
+    "open": "Open menu",
+    "close": "Close menu",
+    "switchTo": "Deutsch",
+    "switchLabel": "Zu Deutsch wechseln"
+  },
+  "cta": {
+    "interest": "Register your interest",
+    "interestShort": "Register",
+    "start": "Meet Lisa for free",
+    "startShort": "Meet Lisa",
+    "more": "Find out more"
+  },
+  "band": {
+    "title": "Meet Lisa.",
+    "lead": "We are preparing the pilot phase. Register your interest without obligation.",
+    "liveTitle": "Meet Lisa.",
+    "liveLead": "Five minutes, free of charge and without obligation."
+  },
+  "form": {
+    "name": "Your name",
+    "email": "Your email address",
+    "roleLegend": "I am interested",
+    "rolePrivate": "for myself",
+    "rolePartner": "as an organisation or partner",
+    "pilot": "I would like to take part in the pilot phase.",
+    "message": "Your message",
+    "optional": "optional",
+    "consent": "I consent to my details being processed so that I can be contacted about Project L.E.B.E.N. I can withdraw this consent at any time.",
+    "privacyLink": "Privacy information",
+    "submit": "Register my interest",
+    "sending": "Sending …",
+    "successTitle": "Thank you.",
+    "successText": "Your message has reached us. We will be in touch personally as soon as there is news.",
+    "errors": {
+      "name": "Please tell us your name.",
+      "email": "Please enter a valid email address.",
+      "consent": "Please agree to the processing of your details.",
+      "message": "Your message is too long. Please shorten it a little.",
+      "rate": "Your message is already on its way. Please try again in a minute.",
+      "send": "Unfortunately your message could not be sent. Please try again later.",
+      "sendWithMail": "Unfortunately your message could not be sent. Please write to us directly at"
+    }
+  },
+  "footer": {
+    "about": "A personal digital life companion for everyday challenges.",
+    "navTitle": "Explore",
+    "moreTitle": "More",
+    "crisisTitle": "Not an emergency service",
+    "crisisText": "Lisa is no substitute for medical or psychotherapeutic help. In an acute crisis in Germany:",
+    "crisisEmergency": "Emergency",
+    "crisisCounselling": "TelefonSeelsorge",
+    "copyright": "© {year} Project L.E.B.E.N.",
+    "tech": "Avatar technology by Persohap"
+  },
+  "notFound": {
+    "title": "This page does not exist.",
+    "text": "The address you opened leads nowhere. The home page has everything you need.",
+    "back": "To the home page"
+  }
+}

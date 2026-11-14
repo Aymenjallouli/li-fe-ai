@@ -1,0 +1,80 @@
+{
+  "brand": {
+    "prefix": "Projekt",
+    "name": "L.E.B.E.N.",
+    "claim": "Reden. Reflektieren. Handeln.",
+    "home": "Projekt L.E.B.E.N. – zur Startseite"
+  },
+  "skip": "Zum Inhalt springen",
+  "nav": {
+    "label": "Hauptnavigation",
+    "lisa": "Lisa",
+    "method": "Methode",
+    "topics": "Themen",
+    "pricing": "Preise",
+    "about": "Über uns",
+    "safety": "Sicherheit",
+    "faq": "Häufige Fragen",
+    "register": "Vormerken",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "open": "Menü öffnen",
+    "close": "Menü schließen",
+    "switchTo": "English",
+    "switchLabel": "Switch to English"
+  },
+  "cta": {
+    "interest": "Unverbindlich vormerken",
+    "interestShort": "Vormerken",
+    "start": "Kostenlos kennenlernen",
+    "startShort": "Kennenlernen",
+    "more": "Mehr erfahren"
+  },
+  "band": {
+    "title": "Lernen Sie Lisa kennen.",
+    "lead": "Wir bereiten die Pilotphase vor. Lassen Sie sich unverbindlich vormerken.",
+    "liveTitle": "Lernen Sie Lisa kennen.",
+    "liveLead": "Fünf Minuten, kostenfrei und unverbindlich."
+  },
+  "form": {
+    "name": "Ihr Name",
+    "email": "Ihre E-Mail-Adresse",
+    "roleLegend": "Ich interessiere mich",
+    "rolePrivate": "für mich persönlich",
+    "rolePartner": "als Organisation oder Partner",
+    "pilot": "Ich möchte gern an der Pilotphase teilnehmen.",
+    "message": "Ihre Nachricht",
+    "optional": "optional",
+    "consent": "Ich willige ein, dass meine Angaben verarbeitet werden, um mich zu Projekt L.E.B.E.N. zu kontaktieren. Diese Einwilligung kann ich jederzeit widerrufen.",
+    "privacyLink": "Hinweise zum Datenschutz",
+    "submit": "Vormerken lassen",
+    "sending": "Wird gesendet …",
+    "successTitle": "Vielen Dank.",
+    "successText": "Ihre Nachricht ist bei uns angekommen. Wir melden uns persönlich bei Ihnen, sobald es Neuigkeiten gibt.",
+    "errors": {
+      "name": "Bitte geben Sie Ihren Namen an.",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse an.",
+      "consent": "Bitte stimmen Sie der Verarbeitung Ihrer Angaben zu.",
+      "message": "Ihre Nachricht ist zu lang. Bitte kürzen Sie sie etwas.",
+      "rate": "Ihre Nachricht ist bereits unterwegs. Bitte versuchen Sie es in einer Minute erneut.",
+      "send": "Ihre Nachricht konnte leider nicht gesendet werden. Bitte versuchen Sie es später noch einmal.",
+      "sendWithMail": "Ihre Nachricht konnte leider nicht gesendet werden. Bitte schreiben Sie uns direkt an"
+    }
+  },
+  "footer": {
+    "about": "Eine persönliche digitale Lebensbegleiterin für die Herausforderungen des Alltags.",
+    "navTitle": "Entdecken",
+    "moreTitle": "Mehr",
+    "crisisTitle": "Kein Notfalldienst",
+    "crisisText": "Lisa ersetzt keine ärztliche oder psychotherapeutische Hilfe. In akuten Krisen:",
+    "crisisEmergency": "Notruf",
+    "crisisCounselling": "TelefonSeelsorge",
+    "copyright": "© {year} Projekt L.E.B.E.N.",
+    "tech": "Avatar-Technologie von Persohap"
+  },
+  "notFound": {
+    "title": "Diese Seite gibt es nicht.",
+    "text": "Die aufgerufene Adresse führt ins Leere. Über die Startseite finden Sie alles Wesentliche.",
+    "back": "Zur Startseite"
+  }
+}

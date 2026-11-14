@@ -1,0 +1,35 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/.next-dev/
+/out/
+
+# production
+/build
+/dist
+
+# environment files (never commit)
+.env
+.env.local
+.env.*.local
+
+# debug
+npm-debug.log*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# hosting
+.vercel
+
+# internal source documents (concept paper with the financial model) — never publish
+*.pdf

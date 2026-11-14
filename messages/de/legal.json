@@ -1,0 +1,63 @@
+{
+  "draft": "Entwurf – diese Seite wird vor der Veröffentlichung vervollständigt und rechtlich geprüft.",
+  "pending": "wird vor der Veröffentlichung ergänzt",
+  "back": "Zur Startseite",
+  "imprint": {
+    "meta": {
+      "title": "Impressum",
+      "description": "Anbieterkennzeichnung von Projekt L.E.B.E.N."
+    },
+    "title": "Impressum.",
+    "intro": "Angaben gemäß § 5 DDG",
+    "providerTitle": "Anbieterin",
+    "contactTitle": "Kontakt",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "vatTitle": "Umsatzsteuer-Identifikationsnummer",
+    "responsibleTitle": "Verantwortlich für den Inhalt",
+    "techTitle": "Technologiepartner",
+    "techText": "Die Avatar-Technologie und die technische Plattform stellt Persohap bereit.",
+    "noticeTitle": "Hinweis zum Angebot",
+    "noticeText": "Projekt L.E.B.E.N. ist ein Angebot zur allgemeinen Lebensorientierung. Es ersetzt keine ärztliche oder psychotherapeutische Beratung, Diagnose oder Behandlung."
+  },
+  "privacy": {
+    "meta": {
+      "title": "Datenschutz",
+      "description": "Datenschutzhinweise für die Website von Projekt L.E.B.E.N."
+    },
+    "title": "Datenschutz.",
+    "intro": "Der Schutz Ihrer persönlichen Daten ist uns wichtig – gerade bei einem Angebot, in dem es um Persönliches geht. Hier erfahren Sie, welche Daten diese Website verarbeitet.",
+    "sections": [
+      {
+        "title": "Verantwortliche Stelle",
+        "body": ["Verantwortlich für die Datenverarbeitung auf dieser Website ist die im Impressum genannte Anbieterin."]
+      },
+      {
+        "title": "Aufruf dieser Website",
+        "body": ["Beim Aufruf dieser Website verarbeitet der Hosting-Anbieter technisch notwendige Daten – etwa IP-Adresse, Zeitpunkt des Abrufs, abgerufene Seite und Browsertyp –, um die Seite auszuliefern und ihre Sicherheit zu gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO."]
+      },
+      {
+        "title": "Keine Cookies, keine Analyse-Dienste",
+        "body": ["Diese Website setzt keine Cookies, bindet keine Analyse- oder Werbedienste ein und lädt keine Inhalte von Drittanbietern. Schriften werden von unserem eigenen Server ausgeliefert."]
+      },
+      {
+        "title": "Vormerkung und Kontaktaufnahme",
+        "body": [
+          "Wenn Sie sich über das Formular vormerken lassen, verarbeiten wir die von Ihnen angegebenen Daten – Name, E-Mail-Adresse, Ihre Auswahl sowie eine freiwillige Nachricht – ausschließlich, um Sie zu Projekt L.E.B.E.N. zu kontaktieren. Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO.",
+          "Ihre Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen. Ihre Angaben werden dann gelöscht."
+        ]
+      },
+      {
+        "title": "Ihre Rechte",
+        "body": ["Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15 bis 21 DSGVO). Außerdem können Sie sich bei einer Datenschutzaufsichtsbehörde beschweren."]
+      },
+      {
+        "title": "Die Nutzung von Lisa",
+        "body": ["Für die Gespräche mit Lisa und das persönliche Gedächtnis gelten eigene Datenschutzhinweise. Wir veröffentlichen sie vor dem Start des Angebots an dieser Stelle."]
+      }
+    ],
+    "hostingTitle": "Hosting",
+    "hostingText": "Diese Website wird gehostet bei:",
+    "updated": "Stand: November 2026"
+  }
+}

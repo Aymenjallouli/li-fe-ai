@@ -1,0 +1,237 @@
+{
+  "home": {
+    "meta": {
+      "title": "Lisa, your personal AI life companion | Project L.E.B.E.N.",
+      "description": "Lisa is your personal AI life companion for challenging everyday situations. Thirty minutes for your situation, one concrete next step."
+    },
+    "hero": {
+      "kicker": "Your personal AI life companion",
+      "claim": ["Talk.", "Reflect.", "Act."],
+      "lead": "30 minutes for your situation. One concrete next step.",
+      "secondary": "How it works",
+      "assurances": ["Free five-minute introduction", "No appointment", "No technical knowledge"],
+      "status": "In preparation · pilot phase before launch",
+      "alt": "Lisa, the AI avatar of Project L.E.B.E.N.",
+      "listening": "Lisa is listening",
+      "says": "Lisa",
+      "lines": [
+        {"phase": "Talk", "text": "How are you today? What’s on your mind?"},
+        {"phase": "Reflect", "text": "What matters most to you about it?"},
+        {"phase": "Act", "text": "What can you do for yourself, concretely, right now?"}
+      ]
+    },
+    "ask": {
+      "title": "What’s on your mind?",
+      "hint": "Choose a topic.",
+      "replyLabel": "Lisa asks",
+      "stepLabel": "A possible next step",
+      "link": "All topics"
+    },
+    "scene": {
+      "unit": "minutes",
+      "link": "The method",
+      "steps": [
+        {"word": "Talk.", "text": "You speak. Lisa listens."},
+        {"word": "Reflect.", "text": "Questions that open new perspectives."},
+        {"word": "Act.", "text": "One concrete step for your everyday life."}
+      ]
+    },
+    "prices": {"title": "Simple. Transparent.", "link": "All details"},
+    "trust": {
+      "title": "Lisa is an AI. Not therapy.",
+      "text": "Professionally developed by Katharina Heinschke. Technology by Persohap.",
+      "safety": "Boundaries and safety",
+      "about": "Who is behind it"
+    }
+  },
+  "topics": {
+    "meta": {
+      "title": "Topics: what Lisa is there for",
+      "description": "Relationships, grief, family and caring, work, transitions, overload, personal development – Lisa accompanies you in everyday life."
+    },
+    "kicker": "Topics",
+    "title": "What Lisa is there for.",
+    "lead": "For the moments when a conversation would help.",
+    "note": "Orientation in everyday life – not medical treatment and not a substitute for psychotherapy.",
+    "items": [
+      {
+        "title": "Relationships",
+        "start": "These days we only talk about logistics.",
+        "ask": "Which needs or expectations might be involved?",
+        "step": "Write down the first sentence for that conversation."
+      },
+      {
+        "title": "Grief",
+        "start": "Since my husband died, so much has been left undone.",
+        "ask": "What would help you in this moment?",
+        "step": "Decide on a first organisational step. Just one."
+      },
+      {
+        "title": "Family and caring",
+        "start": "There is hardly anything left for me.",
+        "ask": "What resources are available to you?",
+        "step": "Plan one hour this week – just for yourself."
+      },
+      {
+        "title": "Work",
+        "start": "Since the restructuring I don’t know where I stand.",
+        "ask": "What is particularly important to you here?",
+        "step": "Ask your manager for that conversation."
+      },
+      {
+        "title": "Transitions",
+        "start": "The children have left home. What now?",
+        "ask": "Could there be another way to view the situation?",
+        "step": "Write two options down side by side."
+      },
+      {
+        "title": "Overload",
+        "start": "Right now it is simply all too much.",
+        "ask": "What are you noticing in yourself?",
+        "step": "Name the one thing that matters today."
+      },
+      {
+        "title": "Personal development",
+        "start": "I want to decide more clearly – and doubt less.",
+        "ask": "What options can you already see?",
+        "step": "Pause once a day and notice what is there."
+      }
+    ]
+  },
+  "lisa": {
+    "meta": {
+      "title": "Lisa – the AI life companion",
+      "description": "Lisa is a digital conversational partner: she listens, asks, remembers and helps you find a concrete next step."
+    },
+    "kicker": "This is Lisa",
+    "title": "She listens.",
+    "lead": "A digital conversational partner for your everyday life – in entirely natural language.",
+    "opening": "Hello, it’s lovely to see you. How are you today?",
+    "traits": [
+      {"title": "Listens.", "text": "A conversation, not a questionnaire and not a programme."},
+      {"title": "Asks.", "text": "Targeted questions instead of ready-made advice."},
+      {"title": "Remembers.", "text": "Up to 100 conversations – with your consent. You never have to tell it twice."},
+      {"title": "Stays concrete.", "text": "Every conversation ends with an achievable step."}
+    ],
+    "accessTitle": "In your browser. Soon on the move.",
+    "accessText": "At launch on a laptop or computer. Smartphone access is planned.",
+    "note": "Lisa is an AI, not a human being."
+  },
+  "method": {
+    "meta": {
+      "title": "The method: Talk. Reflect. Act.",
+      "description": "How a conversation with Lisa unfolds: space to talk, questions to reflect and one concrete next step – in thirty minutes."
+    },
+    "kicker": "The method",
+    "title": "One conversation. Three steps.",
+    "lead": "Lisa does not hand out ready-made advice. She asks the questions that move you forward.",
+    "questionLabel": "The guiding question of every conversation",
+    "question": "What can I do for myself, concretely, right now?",
+    "journeyTitle": "How to start.",
+    "journey": [
+      {"title": "Meet Lisa", "text": "5 minutes, free. Lisa gets to know you."},
+      {"title": "Choose a package", "text": "Five or ten conversations a month."},
+      {"title": "Talk", "text": "30 minutes, whenever it suits you. No appointment."},
+      {"title": "Act", "text": "You leave with one concrete step."}
+    ],
+    "credit": "Content and methodology: Katharina Heinschke."
+  },
+  "pricing": {
+    "meta": {
+      "title": "Pricing: Basic and Plus",
+      "description": "A free introductory conversation, then Basic at €59 or Plus at €99 per month. Additional conversations at €10 each."
+    },
+    "kicker": "Pricing",
+    "title": "Two packages. One clear price.",
+    "lead": "The introduction is free.",
+    "rows": [
+      {"name": "Introduction", "what": "5 minutes with Lisa", "price": "€0", "per": "one time"},
+      {"name": "Basic", "what": "5 conversations of 30 minutes", "price": "€59", "per": "per month"},
+      {"name": "Plus", "what": "10 conversations of 30 minutes", "price": "€99", "per": "per month"},
+      {"name": "Additional", "what": "30 minutes extra", "price": "€10", "per": "each"}
+    ],
+    "included": "Always included: access to Lisa, personal memory, flexible use without appointments.",
+    "fine": [
+      "All prices include VAT.",
+      "Under the current plan, unused conversations expire at the end of the month.",
+      "Envisaged notice period: one month. The binding terms will follow before launch.",
+      "Payment through Stripe is intended."
+    ]
+  },
+  "safety": {
+    "meta": {
+      "title": "Boundaries and safety",
+      "description": "Lisa offers general life guidance – not therapy, not diagnoses. Where her limits lie and where to find help in an emergency."
+    },
+    "kicker": "Boundaries and safety",
+    "title": "Lisa is not therapy.",
+    "lead": "She offers orientation in everyday life – and knows her limits.",
+    "isTitle": "What Lisa is for",
+    "is": ["Orientation in everyday life", "Reflection and new perspectives", "Your own decisions", "One concrete next step"],
+    "isNotTitle": "What Lisa does not provide",
+    "isNot": ["Psychotherapy", "Diagnoses", "Treatment", "A substitute for medical help"],
+    "crisisTitle": "In an emergency.",
+    "crisisText": "In an acute crisis, Lisa directs you to professional help. Whether that works reliably is tested in the pilot phase.",
+    "emergency": "Emergency",
+    "counselling": "TelefonSeelsorge",
+    "counsellingNote": "free of charge · around the clock",
+    "dataTitle": "Your data. Your decision.",
+    "data": [
+      {"title": "Consent", "text": "Nothing is stored without your agreement."},
+      {"title": "Transparency", "text": "You can see what is stored."},
+      {"title": "Correction", "text": "Information can be corrected."},
+      {"title": "Deletion", "text": "Everything is removed at your request."}
+    ]
+  },
+  "about": {
+    "meta": {
+      "title": "About: who is behind Lisa",
+      "description": "Project L.E.B.E.N. combines Katharina Heinschke’s conversation methodology with Persohap’s avatar technology."
+    },
+    "kicker": "About",
+    "title": "Experience meets technology.",
+    "lead": "A professionally developed conversation methodology, combined with proven avatar technology.",
+    "parties": [
+      {"title": "Katharina Heinschke", "meta": "Content and methodology", "text": "Responsible for the concept and the conversation methodology. Experience from healthcare and advisory work."},
+      {"title": "Persohap", "meta": "Technology", "text": "Avatar technology, platform and operations."}
+    ],
+    "pilotFigure": "10–15",
+    "pilotTitle": "people test Lisa first.",
+    "pilotText": "Test first. Then launch.",
+    "pilotCta": "Register for the pilot phase",
+    "roadTitle": "The path to launch.",
+    "road": ["Alignment", "Development", "Configuration", "Pilot phase", "Preparation", "Launch"],
+    "roadStatus": "Status November 2026: preparing the first tests.",
+    "partnersTitle": "For organisations.",
+    "partnersText": "Self-help groups, associations, grief cafés, funeral service providers, networks: Lisa as complementary guidance – not a substitute for professional support.",
+    "partnersCta": "Enquire about cooperation"
+  },
+  "faq": {
+    "meta": {
+      "title": "Frequently asked questions",
+      "description": "Answers about Lisa, how it works, personal memory, pricing and availability."
+    },
+    "kicker": "Frequently asked questions",
+    "title": "Good to know.",
+    "items": [
+      {"q": "Is Lisa a form of therapy?", "a": "No. Lisa offers orientation in everyday life. She makes no diagnoses and replaces neither psychotherapy nor medical help."},
+      {"q": "What if I am in a very bad place?", "a": "Then Lisa is not the right service. In acute danger in Germany, please call 112. The TelefonSeelsorge can be reached free of charge on 0800 111 0 111."},
+      {"q": "Am I talking to a human being?", "a": "No. Lisa is an AI avatar. The conversation methodology behind her has been developed professionally."},
+      {"q": "Do I need prior knowledge?", "a": "No. You log in, open Lisa and simply talk."},
+      {"q": "What does Lisa remember?", "a": "With your consent, what matters from your conversations. You can have it corrected or deleted."},
+      {"q": "What happens to unused conversations?", "a": "Under the current plan they expire at the end of the month."},
+      {"q": "How do I cancel?", "a": "A notice period of one month is envisaged. The binding terms will follow before launch."},
+      {"q": "When will Lisa be available?", "a": "We are preparing a pilot phase with 10 to 15 people. Register your interest – we will be in touch."}
+    ]
+  },
+  "register": {
+    "meta": {
+      "title": "Register your interest",
+      "description": "Register your interest in the pilot phase and the launch of Lisa – free of charge and without obligation."
+    },
+    "kicker": "Register",
+    "title": "Be there.",
+    "lead": "We are preparing the pilot phase and will be in touch personally.",
+    "points": ["No obligation, free of charge", "No advertising", "Withdraw at any time"]
+  }
+}
