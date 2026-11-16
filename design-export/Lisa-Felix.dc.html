@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lisa &amp; Felix – li-fe.ai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700;1,800&family=Quicksand:wght@400;500;600;700&family=Allison&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#070604;color:#f4efe6;font-family:'Quicksand',sans-serif}
+a{color:#f0c060;text-decoration:none}
+a:hover{color:#ffe09a}
+</style>
+</helmet>
+<dc-import name="Header" active="lisa-felix" hint-size="100%,68px" style="display:block;position:sticky;top:0;z-index:50"></dc-import>
+<main style="max-width:1280px;margin:0 auto;background:url(assets/bg-br.png) right bottom/min(36%,460px) auto no-repeat,url(assets/bg-bl.png) left bottom/min(36%,460px) auto no-repeat,url(bg-bokeh.svg) top center/max(100%,900px) auto no-repeat,radial-gradient(120% 600px at 50% 0%,#2a1c08 0%,#0d0a06 60%,#080705 100%)">
+  <section style="text-align:center;padding:64px 24px 40px">
+    <div style="font:400 58px/1 'Allison',cursive;color:#fff">Lisa <span style="color:#f0c060">&amp;</span> Felix</div>
+    <h1 style="margin:14px 0 0;font-size:clamp(32px,5vw,52px);line-height:1.1;font-weight:700">Zwei Gesprächspartner.<br><span style="color:#f0c060">Du entscheidest.</span></h1>
+    <p style="margin:16px auto 0;max-width:640px;font-size:18px;line-height:1.5;font-weight:500;text-wrap:pretty">Sprich mit Lisa oder Felix über das, was dich bewegt. Persönlich, interaktiv und jederzeit.</p>
+  </section>
+
+  <section id="wahl" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:28px;padding:8px 24px 56px;max-width:1080px;margin:0 auto;scroll-margin-top:90px">
+    <article style="border:1px solid rgba(201,150,47,.6);border-radius:20px;background:rgba(20,15,8,.75);overflow:hidden;display:flex;flex-direction:column">
+      <div style="position:relative;aspect-ratio:4/3"><image-slot id="felix-portrait" src="assets/felix.png" shape="rect" placeholder="Foto Felix"></image-slot></div>
+      <div style="padding:26px 28px 30px;display:flex;flex-direction:column;gap:14px;flex:1">
+        <div style="font:400 64px/1 'Allison',cursive;color:#fff">Felix</div>
+        <div style="width:90px;height:2px;background:linear-gradient(90deg,#e9b54a,transparent)"></div>
+        <p style="margin:0;font-size:18px;line-height:1.45;font-weight:600">Dein Gesprächspartner für Klarheit, Entscheidungen und neue Perspektiven.</p>
+        <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:16px;font-weight:500">
+          <li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f0c060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px"><circle cx="12" cy="12" r="10"></circle><path d="M8 12l3 3 5-6"></path></svg><span>Entscheidungen strukturieren</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f0c060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px"><circle cx="12" cy="12" r="10"></circle><path d="M8 12l3 3 5-6"></path></svg><span>Ziele klären und Prioritäten setzen</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f0c060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px"><circle cx="12" cy="12" r="10"></circle><path d="M8 12l3 3 5-6"></path></svg><span>Neue Blickwinkel gewinnen</span></li>
+        </ul>
+        <a href="#" style="margin-top:auto;display:flex;align-items:center;justify-content:center;gap:12px;background:linear-gradient(180deg,#f8d98a,#dba036);color:#1a1206;font-weight:700;font-size:18px;padding:14px 22px;border-radius:14px;box-shadow:0 0 24px rgba(233,181,74,.35)" style-hover="filter:brightness(1.08);color:#1a1206"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1206" stroke-width="2" stroke-linecap="round" style="flex:none"><rect x="9" y="2" width="6" height="12" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v4"></path></svg><span>Mit Felix sprechen</span></a>
+      </div>
+    </article>
+    <article style="border:1px solid rgba(201,150,47,.6);border-radius:20px;background:rgba(20,15,8,.75);overflow:hidden;display:flex;flex-direction:column">
+      <div style="position:relative;aspect-ratio:4/3"><image-slot id="lisa-portrait" src="assets/lisa.png" shape="rect" placeholder="Foto Lisa"></image-slot></div>
+      <div style="padding:26px 28px 30px;display:flex;flex-direction:column;gap:14px;flex:1">
+        <div style="font:400 64px/1 'Allison',cursive;color:#fff">Lisa</div>
+        <div style="width:90px;height:2px;background:linear-gradient(90deg,#e9b54a,transparent)"></div>
+        <p style="margin:0;font-size:18px;line-height:1.45;font-weight:600">Deine Gesprächspartnerin für persönliche Themen, Beziehungen und innere Stärke.</p>
+        <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:16px;font-weight:500">
+          <li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f0c060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px"><circle cx="12" cy="12" r="10"></circle><path d="M8 12l3 3 5-6"></path></svg><span>Beziehungen und Familie</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f0c060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px"><circle cx="12" cy="12" r="10"></circle><path d="M8 12l3 3 5-6"></path></svg><span>Selbstvertrauen und innere Stärke</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f0c060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px"><circle cx="12" cy="12" r="10"></circle><path d="M8 12l3 3 5-6"></path></svg><span>Persönliche Themen sortieren</span></li>
+        </ul>
+        <a href="#" style="margin-top:auto;display:flex;align-items:center;justify-content:center;gap:12px;background:linear-gradient(180deg,#f8d98a,#dba036);color:#1a1206;font-weight:700;font-size:18px;padding:14px 22px;border-radius:14px;box-shadow:0 0 24px rgba(233,181,74,.35)" style-hover="filter:brightness(1.08);color:#1a1206"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1206" stroke-width="2" stroke-linecap="round" style="flex:none"><rect x="9" y="2" width="6" height="12" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v4"></path></svg><span>Mit Lisa sprechen</span></a>
+      </div>
+    </article>
+  </section>
+
+  <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(233,181,74,.6),transparent)"></div>
+
+  <section style="padding:56px 24px 72px;text-align:center">
+    <h2 style="margin:0;font-size:clamp(26px,3.4vw,34px);font-weight:700">Was beide gemeinsam haben</h2>
+    <p style="margin:12px auto 32px;max-width:620px;font-size:17px;line-height:1.5;font-weight:500;text-wrap:pretty">Du redest, sie hören zu, stellen die richtigen Fragen, reflektieren mit dir und entwickeln gemeinsam konkrete nächste Schritte.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:1080px;margin:0 auto">
+      <div style="border:1px solid rgba(201,150,47,.6);border-radius:16px;padding:22px 16px;background:rgba(20,15,8,.7);font-size:17px;font-weight:600">Zuhören</div>
+      <div style="border:1px solid rgba(201,150,47,.6);border-radius:16px;padding:22px 16px;background:rgba(20,15,8,.7);font-size:17px;font-weight:600">Die richtigen Fragen stellen</div>
+      <div style="border:1px solid rgba(201,150,47,.6);border-radius:16px;padding:22px 16px;background:rgba(20,15,8,.7);font-size:17px;font-weight:600">Mit dir reflektieren</div>
+      <div style="border:1px solid rgba(201,150,47,.6);border-radius:16px;padding:22px 16px;background:rgba(20,15,8,.7);font-size:17px;font-weight:600">Konkrete nächste Schritte</div>
+    </div>
+  </section>
+</main>
+<dc-import name="Footer" hint-size="100%,340px"></dc-import>
+</x-dc>
+</body>
+</html>

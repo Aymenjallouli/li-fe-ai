@@ -6,7 +6,7 @@ import {SITE_URL} from '@/lib/site-config';
 export type Href = Parameters<typeof getPathname>[0]['href'];
 
 export function brandName(locale: string) {
-  return locale === 'en' ? 'Project L.E.B.E.N.' : 'Projekt L.E.B.E.N.';
+  return locale === 'en' ? 'li-fe.ai' : 'li-fe.ai';
 }
 
 /** `getPathname` returns "/de" for the home route and "/de/impressum" below it. */

@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
      overwriting each other's output: NEXT_DIST_DIR=.next-dev next dev */
   distDir: process.env.NEXT_DIST_DIR || '.next',
 
+  /* The imported design markup is read from content/ with fs. Pages are
+     prerendered, but anything rendered on demand (the 404 page) needs the
+     files shipped with the server too. */
+  outputFileTracingIncludes: {'/**': ['./content/**']},
+
   /* Server-only and CommonJS: required at runtime instead of being walked by
      the bundler on every change. Next still traces it into the deployment. */
   serverExternalPackages: ['@aws-sdk/client-ses'],

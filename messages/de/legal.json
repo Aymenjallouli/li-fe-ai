@@ -5,7 +5,7 @@
   "imprint": {
     "meta": {
       "title": "Impressum",
-      "description": "Anbieterkennzeichnung von Projekt L.E.B.E.N."
+      "description": "Anbieterkennzeichnung von li-fe.ai"
     },
     "title": "Impressum.",
     "intro": "Angaben gemäß § 5 DDG",
@@ -18,12 +18,12 @@
     "techTitle": "Technologiepartner",
     "techText": "Die Avatar-Technologie und die technische Plattform stellt Persohap bereit.",
     "noticeTitle": "Hinweis zum Angebot",
-    "noticeText": "Projekt L.E.B.E.N. ist ein Angebot zur allgemeinen Lebensorientierung. Es ersetzt keine ärztliche oder psychotherapeutische Beratung, Diagnose oder Behandlung."
+    "noticeText": "li-fe.ai ist ein Angebot zur allgemeinen Lebensorientierung. Es ersetzt keine ärztliche oder psychotherapeutische Beratung, Diagnose oder Behandlung."
   },
   "privacy": {
     "meta": {
       "title": "Datenschutz",
-      "description": "Datenschutzhinweise für die Website von Projekt L.E.B.E.N."
+      "description": "Datenschutzhinweise für die Website von li-fe.ai"
     },
     "title": "Datenschutz.",
     "intro": "Der Schutz Ihrer persönlichen Daten ist uns wichtig – gerade bei einem Angebot, in dem es um Persönliches geht. Hier erfahren Sie, welche Daten diese Website verarbeitet.",
@@ -49,7 +49,7 @@
       {
         "title": "Vormerkung und Kontaktaufnahme",
         "body": [
-          "Wenn Sie sich über das Formular vormerken lassen, verarbeiten wir die von Ihnen angegebenen Daten – Name, E-Mail-Adresse, Ihre Auswahl sowie eine freiwillige Nachricht – ausschließlich, um Sie zu Projekt L.E.B.E.N. zu kontaktieren. Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO.",
+          "Wenn Sie sich über das Formular vormerken lassen, verarbeiten wir die von Ihnen angegebenen Daten – Name, E-Mail-Adresse, Ihre Auswahl sowie eine freiwillige Nachricht – ausschließlich, um Sie zu li-fe.ai zu kontaktieren. Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO.",
           "Ihre Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen. Ihre Angaben werden dann gelöscht."
         ]
       },

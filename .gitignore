@@ -33,3 +33,6 @@ Thumbs.db
 
 # internal source documents (concept paper with the financial model) — never publish
 *.pdf
+
+# stray design drafts dropped into the project root
+/*.html

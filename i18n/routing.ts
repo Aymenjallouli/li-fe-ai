@@ -21,8 +21,6 @@ export const routing = defineRouting({
     '/methode': {de: '/methode', en: '/method'},
     '/themen': {de: '/themen', en: '/topics'},
     '/preise': {de: '/preise', en: '/pricing'},
-    '/sicherheit': {de: '/sicherheit', en: '/safety'},
-    '/ueber-uns': {de: '/ueber-uns', en: '/about'},
     '/fragen': {de: '/fragen', en: '/faq'},
     '/vormerken': {de: '/vormerken', en: '/register'},
     '/impressum': {de: '/impressum', en: '/legal-notice'},

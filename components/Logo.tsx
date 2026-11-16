@@ -1,36 +1,16 @@
 /**
- * The mark: a conversation's arc that arrives at a point — the next step.
- * The same idea drives the 30-minute dial on the method page, and the point
- * returns as the full stops in "L.E.B.E.N.".
+ * The li-fe.ai wordmark: italic white letters, ".ai" in gold, and a gold arc
+ * sweeping over the name. `big` is the hero version.
  */
-export default function Logo({prefix}: {prefix: string}) {
+export default function Logo({big = false}: {prefix?: string; big?: boolean}) {
   return (
-    <span className="logo">
-      <svg className="logo-mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
-        <circle
-          cx="16"
-          cy="16"
-          r="11.5"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="3.2"
-          strokeLinecap="round"
-          pathLength="100"
-          strokeDasharray="76 100"
-          transform="rotate(-90 16 16)"
-        />
-        <circle className="logo-dot" cx="5.2" cy="11.6" r="3.7" />
+    <span className={`logo${big ? ' logo--big' : ''}`}>
+      <svg className="logo-arc" viewBox="0 0 120 22" aria-hidden="true" preserveAspectRatio="none">
+        <path d="M3 20 C 28 2, 78 -2, 117 9" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
       </svg>
-      <span className="logo-text">
-        <span className="logo-pre">{prefix}</span>
-        <span className="logo-name" role="img" aria-label="L.E.B.E.N.">
-          {'LEBEN'.split('').map((letter, i) => (
-            <span key={i} aria-hidden="true">
-              {letter}
-              <i>.</i>
-            </span>
-          ))}
-        </span>
+      <span className="logo-word" role="img" aria-label="li-fe.ai">
+        <span aria-hidden="true">li-fe</span>
+        <b aria-hidden="true">.ai</b>
       </span>
     </span>
   );

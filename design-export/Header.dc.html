@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<header style="background:rgba(8,6,3,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(233,181,74,.18);font-family:'Quicksand',sans-serif;color:#f4efe6">
+  <div style="max-width:1280px;margin:0 auto;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 24px;min-height:68px">
+    <a href="{{ homeHref }}" aria-label="li-fe.ai" style="position:relative;display:inline-block;flex:none;font:italic 800 30px/1 'Montserrat',sans-serif;color:#fff;letter-spacing:-1px;padding:9px 4px 0 10px;text-decoration:none"><svg viewBox="0 0 120 20" preserveAspectRatio="none" style="position:absolute;left:0;top:0;width:100%;height:14px" fill="none" stroke="#e9b54a" stroke-width="2.5" stroke-linecap="round"><path d="M3 18C20 2 80 0 117 8"></path></svg>li-fe<span style="color:#f0c060">.ai</span></a>
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;align-items:center;gap:20px;flex:1;justify-content:flex-end">
+        <nav style="display:flex;align-items:center;gap:28px;margin-right:auto;margin-left:auto">
+          <sc-for list="{{ items }}" as="item" hint-placeholder-count="6">
+            <a href="{{ item.href }}" style="color:{{ item.color }};padding:6px 0;border-bottom:2px solid {{ item.border }};font-size:16px;font-weight:600;text-decoration:none;white-space:nowrap" style-hover="color:#f0c060">{{ item.label }}</a>
+          </sc-for>
+        </nav>
+        <div style="display:flex;flex:none;border:1px solid rgba(233,181,74,.55);border-radius:10px;overflow:hidden">
+          <sc-for list="{{ langs }}" as="l" hint-placeholder-count="2">
+            <a href="{{ l.href }}" style="padding:8px 11px;font-size:14px;font-weight:700;text-decoration:none;background:{{ l.bg }};color:{{ l.color }}">{{ l.label }}</a>
+          </sc-for>
+        </div>
+        <a href="{{ ctaHref }}" style="flex:none;background:linear-gradient(180deg,#f8d98a,#dba036);color:#1a1206;font-weight:700;font-size:15px;padding:11px 22px;border-radius:12px;box-shadow:0 0 18px rgba(233,181,74,.35);text-decoration:none;white-space:nowrap" style-hover="filter:brightness(1.08)">{{ cta }}</a>
+      </div>
+    </sc-if>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="display:flex;border:1px solid rgba(233,181,74,.55);border-radius:10px;overflow:hidden">
+          <sc-for list="{{ langs }}" as="l" hint-placeholder-count="2">
+            <a href="{{ l.href }}" style="padding:13px 12px;font-size:14px;font-weight:700;text-decoration:none;background:{{ l.bg }};color:{{ l.color }}">{{ l.label }}</a>
+          </sc-for>
+        </div>
+        <button type="button" onClick="{{ toggle }}" aria-label="Menu" style="width:46px;height:46px;display:flex;align-items:center;justify-content:center;background:transparent;border:1px solid rgba(233,181,74,.5);border-radius:12px;cursor:pointer;padding:0">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f0c060" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+        </button>
+      </div>
+    </sc-if>
+  </div>
+  <sc-if value="{{ showMenu }}" hint-placeholder-val="{{ false }}">
+    <nav style="display:flex;flex-direction:column;padding:4px 24px 20px;border-top:1px solid rgba(233,181,74,.18)">
+      <sc-for list="{{ items }}" as="item" hint-placeholder-count="6">
+        <a href="{{ item.href }}" style="color:{{ item.color }};padding:14px 0;border-bottom:1px solid rgba(233,181,74,.14);font-size:18px;font-weight:600;text-decoration:none">{{ item.label }}</a>
+      </sc-for>
+      <a href="{{ ctaHref }}" style="margin-top:18px;text-align:center;background:linear-gradient(180deg,#f8d98a,#dba036);color:#1a1206;font-weight:700;font-size:17px;padding:14px 22px;border-radius:12px;text-decoration:none">{{ cta }}</a>
+    </nav>
+  </sc-if>
+</header>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:80},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;lisa-felix&quot;,&quot;ablauf&quot;,&quot;themen&quot;,&quot;preise&quot;,&quot;faq&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;lang&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;de&quot;,&quot;en&quot;],&quot;default&quot;:&quot;de&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { open: false, w: window.innerWidth };
+  componentDidMount() { this.onR = () => this.setState({ w: window.innerWidth }); window.addEventListener('resize', this.onR); }
+  componentWillUnmount() { window.removeEventListener('resize', this.onR); }
+  renderVals() {
+    const active = this.props.active ?? 'home';
+    const lang = this.props.lang ?? 'de';
+    const en = lang === 'en';
+    const sfx = en ? '-en.dc.html' : '.dc.html';
+    const mobile = this.state.w < 1120;
+    const base = { home: 'Landing%20Page', 'lisa-felix': 'Lisa-Felix', ablauf: 'Ablauf', themen: 'Themen', preise: 'Preise', faq: 'FAQ' };
+    const labels = en
+      ? { home: 'Home', 'lisa-felix': 'Lisa & Felix', ablauf: 'How it works', themen: 'Topics', preise: 'Pricing', faq: 'FAQ' }
+      : { home: 'Home', 'lisa-felix': 'Lisa & Felix', ablauf: 'So funktioniert’s', themen: 'Themen', preise: 'Preise', faq: 'FAQ' };
+    const items = Object.keys(base).map(id => ({ id, label: labels[id], href: base[id] + sfx, color: id === active ? '#ffffff' : '#f4efe6', border: id === active ? '#e9b54a' : 'transparent' }));
+    const cur = base[active] || base.home;
+    const langs = [
+      { label: 'DE', href: cur + '.dc.html', bg: en ? 'transparent' : '#e9b54a', color: en ? '#f4efe6' : '#1a1206' },
+      { label: 'EN', href: cur + '-en.dc.html', bg: en ? '#e9b54a' : 'transparent', color: en ? '#1a1206' : '#f4efe6' }
+    ];
+    return { items, langs, homeHref: base.home + sfx, ctaHref: 'Lisa-Felix' + sfx + '#wahl', cta: en ? 'Start for free' : 'Jetzt kostenlos starten', isMobile: mobile, isDesktop: !mobile, showMenu: mobile && this.state.open, toggle: () => this.setState(s => ({ open: !s.open })) };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,80 +1,82 @@
 {
   "brand": {
-    "prefix": "Projekt",
-    "name": "L.E.B.E.N.",
-    "claim": "Reden. Reflektieren. Handeln.",
-    "home": "Projekt L.E.B.E.N. – zur Startseite"
+    "prefix": "li-fe.ai",
+    "name": "li-fe.ai",
+    "claim": "Lisa & Felix – deine digitalen Lebensbegleiter.",
+    "home": "li-fe.ai"
   },
   "skip": "Zum Inhalt springen",
   "nav": {
     "label": "Hauptnavigation",
-    "lisa": "Lisa",
-    "method": "Methode",
+    "lisa": "Lisa & Felix",
+    "method": "So funktioniert’s",
     "topics": "Themen",
     "pricing": "Preise",
     "about": "Über uns",
     "safety": "Sicherheit",
-    "faq": "Häufige Fragen",
+    "faq": "FAQ",
     "register": "Vormerken",
     "imprint": "Impressum",
     "privacy": "Datenschutz",
     "open": "Menü öffnen",
     "close": "Menü schließen",
     "switchTo": "English",
-    "switchLabel": "Switch to English"
+    "switchLabel": "Switch to English",
+    "home": "Home",
+    "account": "Vormerken"
   },
   "cta": {
-    "interest": "Unverbindlich vormerken",
-    "interestShort": "Vormerken",
-    "start": "Kostenlos kennenlernen",
-    "startShort": "Kennenlernen",
+    "interest": "Jetzt 5 Minuten kostenlos kennenlernen",
+    "interestShort": "Jetzt kostenlos starten",
+    "start": "Jetzt 5 Minuten kostenlos kennenlernen",
+    "startShort": "Jetzt kostenlos starten",
     "more": "Mehr erfahren"
   },
   "band": {
-    "title": "Lernen Sie Lisa kennen.",
-    "lead": "Wir bereiten die Pilotphase vor. Lassen Sie sich unverbindlich vormerken.",
-    "liveTitle": "Lernen Sie Lisa kennen.",
-    "liveLead": "Fünf Minuten, kostenfrei und unverbindlich."
+    "title": "Manchmal hilft es, einfach zu reden.",
+    "lead": "Sprich 5 Minuten kostenlos mit Lisa oder Felix.",
+    "liveTitle": "Manchmal hilft es, einfach zu reden.",
+    "liveLead": "Sprich 5 Minuten kostenlos mit Lisa oder Felix."
   },
   "form": {
-    "name": "Ihr Name",
-    "email": "Ihre E-Mail-Adresse",
+    "name": "Dein Name",
+    "email": "Deine E-Mail-Adresse",
     "roleLegend": "Ich interessiere mich",
     "rolePrivate": "für mich persönlich",
     "rolePartner": "als Organisation oder Partner",
-    "pilot": "Ich möchte gern an der Pilotphase teilnehmen.",
-    "message": "Ihre Nachricht",
+    "pilot": "Ich möchte gern zu den Ersten gehören, die Lisa und Felix testen.",
+    "message": "Deine Nachricht",
     "optional": "optional",
-    "consent": "Ich willige ein, dass meine Angaben verarbeitet werden, um mich zu Projekt L.E.B.E.N. zu kontaktieren. Diese Einwilligung kann ich jederzeit widerrufen.",
+    "consent": "Ich willige ein, dass meine Angaben verarbeitet werden, um mich zu li-fe.ai zu kontaktieren. Diese Einwilligung kann ich jederzeit widerrufen.",
     "privacyLink": "Hinweise zum Datenschutz",
-    "submit": "Vormerken lassen",
+    "submit": "Kostenlos vormerken",
     "sending": "Wird gesendet …",
     "successTitle": "Vielen Dank.",
-    "successText": "Ihre Nachricht ist bei uns angekommen. Wir melden uns persönlich bei Ihnen, sobald es Neuigkeiten gibt.",
+    "successText": "Deine Nachricht ist bei uns angekommen. Wir melden uns persönlich bei dir, sobald Lisa und Felix für dich bereit sind.",
     "errors": {
-      "name": "Bitte geben Sie Ihren Namen an.",
-      "email": "Bitte geben Sie eine gültige E-Mail-Adresse an.",
-      "consent": "Bitte stimmen Sie der Verarbeitung Ihrer Angaben zu.",
-      "message": "Ihre Nachricht ist zu lang. Bitte kürzen Sie sie etwas.",
-      "rate": "Ihre Nachricht ist bereits unterwegs. Bitte versuchen Sie es in einer Minute erneut.",
-      "send": "Ihre Nachricht konnte leider nicht gesendet werden. Bitte versuchen Sie es später noch einmal.",
-      "sendWithMail": "Ihre Nachricht konnte leider nicht gesendet werden. Bitte schreiben Sie uns direkt an"
+      "name": "Bitte gib deinen Namen an.",
+      "email": "Bitte gib eine gültige E-Mail-Adresse an.",
+      "consent": "Bitte stimme der Verarbeitung deiner Angaben zu.",
+      "message": "Deine Nachricht ist zu lang. Bitte kürze sie etwas.",
+      "rate": "Deine Nachricht ist bereits unterwegs. Bitte versuche es in einer Minute erneut.",
+      "send": "Deine Nachricht konnte leider nicht gesendet werden. Bitte versuche es später noch einmal.",
+      "sendWithMail": "Deine Nachricht konnte leider nicht gesendet werden. Bitte schreib uns direkt an"
     }
   },
   "footer": {
-    "about": "Eine persönliche digitale Lebensbegleiterin für die Herausforderungen des Alltags.",
+    "about": "Persönlich, interaktiv und jederzeit – für mehr Klarheit, Orientierung und Handlungsfähigkeit.",
     "navTitle": "Entdecken",
     "moreTitle": "Mehr",
     "crisisTitle": "Kein Notfalldienst",
-    "crisisText": "Lisa ersetzt keine ärztliche oder psychotherapeutische Hilfe. In akuten Krisen:",
+    "crisisText": "li-fe.ai ersetzt keine ärztliche oder psychotherapeutische Hilfe. In akuten Krisen:",
     "crisisEmergency": "Notruf",
     "crisisCounselling": "TelefonSeelsorge",
-    "copyright": "© {year} Projekt L.E.B.E.N.",
+    "copyright": "© {year} li-fe.ai",
     "tech": "Avatar-Technologie von Persohap"
   },
   "notFound": {
     "title": "Diese Seite gibt es nicht.",
-    "text": "Die aufgerufene Adresse führt ins Leere. Über die Startseite finden Sie alles Wesentliche.",
+    "text": "Die Adresse führt ins Leere. Auf der Startseite findest du alles Wesentliche.",
     "back": "Zur Startseite"
   }
 }

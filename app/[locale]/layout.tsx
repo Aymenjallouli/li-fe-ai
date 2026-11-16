@@ -1,5 +1,4 @@
 import type {Metadata, Viewport} from 'next';
-import {Bricolage_Grotesque, Hanken_Grotesk} from 'next/font/google';
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {getMessages, getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
@@ -9,23 +8,18 @@ import {SITE_URL} from '@/lib/site-config';
 import {brandName} from '@/lib/seo';
 import SiteHeader from '@/components/layout/SiteHeader';
 import SiteFooter from '@/components/layout/SiteFooter';
+import '@fontsource/quicksand/400.css';
+import '@fontsource/quicksand/500.css';
+import '@fontsource/quicksand/600.css';
+import '@fontsource/quicksand/700.css';
+import '@fontsource/montserrat/700-italic.css';
+import '@fontsource/montserrat/800-italic.css';
+import '@fontsource/allison/400.css';
 import '../globals.css';
+import '../design-hover.css';
 
-/* TWO FAMILIES, both self-hosted by next/font (no request leaves the site):
-     display  Bricolage Grotesque  — headlines, figures, the wordmark
-     text     Hanken Grotesk       — paragraphs, navigation, labels, buttons */
-const display = Bricolage_Grotesque({
-  variable: '--font-display',
-  subsets: ['latin'],
-  axes: ['opsz'],
-  display: 'swap',
-});
-
-const text = Hanken_Grotesk({
-  variable: '--font-text',
-  subsets: ['latin'],
-  display: 'swap',
-});
+/* Typefaces: Quicksand, Montserrat italic and Allison, the three the design
+   uses. They are bundled with the site (@fontsource), so no request leaves it. */
 
 export function generateStaticParams() {
   return routing.locales.map(locale => ({locale}));
@@ -46,7 +40,7 @@ export async function generateMetadata({params}: {params: Promise<{locale: strin
 }
 
 export const viewport: Viewport = {
-  themeColor: '#CFE6F4',
+  themeColor: '#070604',
   colorScheme: 'light',
 };
 
@@ -56,6 +50,15 @@ export const viewport: Viewport = {
    way a class written onto <html> by a script can. */
 const NOSCRIPT_CSS =
   '.rv{opacity:1!important;transform:none!important}';
+
+/* Sets --z, the factor by which the design scales on screens wider than the
+   1280px it was drawn at (see `.dc` in globals.css). It runs before first
+   paint, so the page never jumps, and again whenever the window is resized.
+   Switching language re-renders <html> and drops the value, so SiteHeader
+   calls window.__dcScale() again after every navigation. */
+const SCALE_BOOTSTRAP =
+  `(function(){var d=document.documentElement;function s(){d.style.setProperty('--z',Math.min(1.5,Math.max(1,d.clientWidth/1280)).toFixed(4))}` +
+  `s();addEventListener('resize',s);window.__dcScale=s})();`;
 
 function websiteJsonLd(locale: string, description: string) {
   return {
@@ -88,8 +91,9 @@ export default async function LocaleLayout({
     /* The font variable classes go on <html>: globals.css reads them in :root,
        and a var() inside a custom property resolves on the element that
        declares it. */
-    <html lang={locale} className={`${display.variable} ${text.variable}`} data-scroll-behavior="smooth">
+    <html lang={locale} data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{__html: SCALE_BOOTSTRAP}} />
         <noscript>
           <style>{NOSCRIPT_CSS}</style>
         </noscript>
@@ -106,7 +110,7 @@ export default async function LocaleLayout({
             {t('skip')}
           </a>
           <SiteHeader />
-          <main id="main">{children}</main>
+          <div id="main">{children}</div>
           <SiteFooter />
           {/* Vercel Web Analytics: cookieless, aggregated page views. It only
               reports from a Vercel deployment; locally it does nothing. */}

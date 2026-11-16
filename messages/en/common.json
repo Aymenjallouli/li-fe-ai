@@ -1,15 +1,15 @@
 {
   "brand": {
-    "prefix": "Project",
-    "name": "L.E.B.E.N.",
-    "claim": "Talk. Reflect. Act.",
-    "home": "Project L.E.B.E.N. – back to the home page"
+    "prefix": "li-fe.ai",
+    "name": "li-fe.ai",
+    "claim": "Lisa & Felix – your digital life companions.",
+    "home": "li-fe.ai"
   },
   "skip": "Skip to content",
   "nav": {
     "label": "Main navigation",
-    "lisa": "Lisa",
-    "method": "Method",
+    "lisa": "Lisa & Felix",
+    "method": "How it works",
     "topics": "Topics",
     "pricing": "Pricing",
     "about": "About",
@@ -21,20 +21,22 @@
     "open": "Open menu",
     "close": "Close menu",
     "switchTo": "Deutsch",
-    "switchLabel": "Zu Deutsch wechseln"
+    "switchLabel": "Zu Deutsch wechseln",
+    "home": "Home",
+    "account": "Register"
   },
   "cta": {
-    "interest": "Register your interest",
-    "interestShort": "Register",
-    "start": "Meet Lisa for free",
-    "startShort": "Meet Lisa",
+    "interest": "Meet them free for 5 minutes",
+    "interestShort": "Start for free",
+    "start": "Meet them free for 5 minutes",
+    "startShort": "Start for free",
     "more": "Find out more"
   },
   "band": {
-    "title": "Meet Lisa.",
-    "lead": "We are preparing the pilot phase. Register your interest without obligation.",
-    "liveTitle": "Meet Lisa.",
-    "liveLead": "Five minutes, free of charge and without obligation."
+    "title": "Sometimes it helps simply to talk.",
+    "lead": "Talk to Lisa or Felix free for 5 minutes.",
+    "liveTitle": "Sometimes it helps simply to talk.",
+    "liveLead": "Talk to Lisa or Felix free for 5 minutes."
   },
   "form": {
     "name": "Your name",
@@ -42,15 +44,15 @@
     "roleLegend": "I am interested",
     "rolePrivate": "for myself",
     "rolePartner": "as an organisation or partner",
-    "pilot": "I would like to take part in the pilot phase.",
+    "pilot": "I would like to be among the first to try Lisa and Felix.",
     "message": "Your message",
     "optional": "optional",
-    "consent": "I consent to my details being processed so that I can be contacted about Project L.E.B.E.N. I can withdraw this consent at any time.",
+    "consent": "I consent to my details being processed so that I can be contacted about li-fe.ai I can withdraw this consent at any time.",
     "privacyLink": "Privacy information",
-    "submit": "Register my interest",
+    "submit": "Register for free",
     "sending": "Sending …",
     "successTitle": "Thank you.",
-    "successText": "Your message has reached us. We will be in touch personally as soon as there is news.",
+    "successText": "Your message has reached us. We will be in touch personally as soon as Lisa and Felix are ready for you.",
     "errors": {
       "name": "Please tell us your name.",
       "email": "Please enter a valid email address.",
@@ -62,14 +64,14 @@
     }
   },
   "footer": {
-    "about": "A personal digital life companion for everyday challenges.",
+    "about": "Personal, interactive and always there – for more clarity, orientation and the confidence to act.",
     "navTitle": "Explore",
     "moreTitle": "More",
     "crisisTitle": "Not an emergency service",
-    "crisisText": "Lisa is no substitute for medical or psychotherapeutic help. In an acute crisis in Germany:",
+    "crisisText": "li-fe.ai is no substitute for medical or psychotherapeutic help. In an acute crisis in Germany:",
     "crisisEmergency": "Emergency",
     "crisisCounselling": "TelefonSeelsorge",
-    "copyright": "© {year} Project L.E.B.E.N.",
+    "copyright": "© {year} li-fe.ai",
     "tech": "Avatar technology by Persohap"
   },
   "notFound": {

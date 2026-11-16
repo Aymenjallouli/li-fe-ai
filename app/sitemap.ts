@@ -18,8 +18,6 @@ const ROUTES: Route[] = [
   {href: '/methode', changeFrequency: 'monthly', priority: 0.9},
   {href: '/themen', changeFrequency: 'monthly', priority: 0.8},
   {href: '/preise', changeFrequency: 'monthly', priority: 0.9},
-  {href: '/sicherheit', changeFrequency: 'monthly', priority: 0.7},
-  {href: '/ueber-uns', changeFrequency: 'monthly', priority: 0.7},
   {href: '/fragen', changeFrequency: 'monthly', priority: 0.7},
   {href: '/vormerken', changeFrequency: 'yearly', priority: 0.8},
   ...(LEGAL_DRAFT
