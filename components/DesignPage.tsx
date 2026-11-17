@@ -19,9 +19,9 @@ export function designTitle(locale: string, page: DesignKey): string {
 /**
  * Renders a page exactly as it was designed.
  *
- * The markup comes from the Claude Design export, converted once by
- * scripts/import-design.mjs and read here at build time. It is the project's
- * own file, not user input. Everything inside `.dc` is shielded from the
+ * The markup lives in content/<locale>/<page>.html (taken from the Claude
+ * Design export) and is read here at build time. It is the project's own
+ * file, not user input. Everything inside `.dc` is shielded from the
  * site's other styles (see app/globals.css), so the inline styles of the
  * design are the only thing that applies.
  */

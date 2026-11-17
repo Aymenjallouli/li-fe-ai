@@ -90,7 +90,7 @@ export async function POST(req: Request) {
     '',
     message || '(keine Nachricht)',
     '',
-    '— gesendet über das Formular auf der Website von Projekt L.E.B.E.N.',
+    '— gesendet über das Formular auf der Website von li-fe.ai',
   ].join('\n');
 
   if (!INTEREST_MAIL_TO || !INTEREST_MAIL_FROM) {

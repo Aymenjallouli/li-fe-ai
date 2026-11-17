@@ -1,43 +1,5 @@
 {
-  "brand": {
-    "prefix": "li-fe.ai",
-    "name": "li-fe.ai",
-    "claim": "Lisa & Felix – deine digitalen Lebensbegleiter.",
-    "home": "li-fe.ai"
-  },
   "skip": "Zum Inhalt springen",
-  "nav": {
-    "label": "Hauptnavigation",
-    "lisa": "Lisa & Felix",
-    "method": "So funktioniert’s",
-    "topics": "Themen",
-    "pricing": "Preise",
-    "about": "Über uns",
-    "safety": "Sicherheit",
-    "faq": "FAQ",
-    "register": "Vormerken",
-    "imprint": "Impressum",
-    "privacy": "Datenschutz",
-    "open": "Menü öffnen",
-    "close": "Menü schließen",
-    "switchTo": "English",
-    "switchLabel": "Switch to English",
-    "home": "Home",
-    "account": "Vormerken"
-  },
-  "cta": {
-    "interest": "Jetzt 5 Minuten kostenlos kennenlernen",
-    "interestShort": "Jetzt kostenlos starten",
-    "start": "Jetzt 5 Minuten kostenlos kennenlernen",
-    "startShort": "Jetzt kostenlos starten",
-    "more": "Mehr erfahren"
-  },
-  "band": {
-    "title": "Manchmal hilft es, einfach zu reden.",
-    "lead": "Sprich 5 Minuten kostenlos mit Lisa oder Felix.",
-    "liveTitle": "Manchmal hilft es, einfach zu reden.",
-    "liveLead": "Sprich 5 Minuten kostenlos mit Lisa oder Felix."
-  },
   "form": {
     "name": "Dein Name",
     "email": "Deine E-Mail-Adresse",
@@ -62,17 +24,6 @@
       "send": "Deine Nachricht konnte leider nicht gesendet werden. Bitte versuche es später noch einmal.",
       "sendWithMail": "Deine Nachricht konnte leider nicht gesendet werden. Bitte schreib uns direkt an"
     }
-  },
-  "footer": {
-    "about": "Persönlich, interaktiv und jederzeit – für mehr Klarheit, Orientierung und Handlungsfähigkeit.",
-    "navTitle": "Entdecken",
-    "moreTitle": "Mehr",
-    "crisisTitle": "Kein Notfalldienst",
-    "crisisText": "li-fe.ai ersetzt keine ärztliche oder psychotherapeutische Hilfe. In akuten Krisen:",
-    "crisisEmergency": "Notruf",
-    "crisisCounselling": "TelefonSeelsorge",
-    "copyright": "© {year} li-fe.ai",
-    "tech": "Avatar-Technologie von Persohap"
   },
   "notFound": {
     "title": "Diese Seite gibt es nicht.",

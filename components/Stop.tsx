@@ -1,10 +1,7 @@
 /**
- * The brand's one decorative device: the full stop.
- *
- * "L.E.B.E.N." and "Reden. Reflektieren. Handeln." are both built on it, so
- * every sentence-ending period in a headline is set in bronze. Periods inside
- * a word (as in L.E.B.E.N.) are left alone — only one followed by a space or
- * the end of the string counts.
+ * Sets every sentence-ending period in a headline in the accent colour.
+ * Periods inside a word (as in "li-fe.ai") are left alone — only one followed
+ * by a space or the end of the string counts.
  */
 export default function Stop({children}: {children: string}) {
   const parts = children.split(/(\.)(?=\s|$)/);

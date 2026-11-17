@@ -15,24 +15,15 @@ npm run check                # TypeScript + translation parity (de/en)
 
 ## How the design gets onto the site
 
-The pages are not redrawn by hand. They come from the Claude Design export:
-
-1. Export the project from Claude Design as **Project HTML (.zip)** and unzip it into `design-export/`.
-2. Run `node scripts/import-design.mjs`.
-
-That writes `content/<locale>/<page>.html` (the design's own markup), copies the artwork to
-`public/design/`, and generates `app/design-hover.css`. `components/DesignPage.tsx` renders the
-markup; `.dc` in `app/globals.css` shields it from every other style so only the design applies.
-
-The importer also fills two gaps the export leaves open: the two plans on the pricing page
-(Basic 59 €, Plus 99 €) and the footer's legal links.
+The design pages are the Claude Design markup, stored as `content/<locale>/<page>.html`
+(plus `titles.json`), with their artwork in `public/design/` and hover states in
+`app/design-hover.css`. `components/DesignPage.tsx` renders the markup; `.dc` in
+`app/globals.css` shields it from every other style so only the design applies.
+To change a design page, edit its HTML in `content/de/` and `content/en/`.
 
 **Pictures of Lisa and Felix:** Felix is the HeyGen LiveAvatar character "Matthew", Lisa is
-"Hannah" (the characters used in the live conversation). The transparent double
-portrait is `design-export/uploads/duo.png`, the catalogue stills are in `design-export/live/`.
-`python scripts/make-portraits.py` turns them into the hero portraits and the laptop/phone
-call screens; run the importer again afterwards. The call
-controls on the two screens are drawn by the importer.
+"Hannah" (the characters used in the live conversation): `public/design/assets/felix.webp`,
+`lisa.webp` (hero), `laptop.webp`, `phone.webp` (call screens).
 
 ## Pages
 

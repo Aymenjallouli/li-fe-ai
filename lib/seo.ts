@@ -61,16 +61,3 @@ export function buildMetadata({
     ...(index ? {} : {robots: {index: false, follow: true}}),
   };
 }
-
-/** FAQ answers are rendered on the page, so they can also be declared as data. */
-export function faqJsonLd(items: Array<{q: string; a: string}>) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: items.map(({q, a}) => ({
-      '@type': 'Question',
-      name: q,
-      acceptedAnswer: {'@type': 'Answer', text: a},
-    })),
-  };
-}

@@ -1,43 +1,5 @@
 {
-  "brand": {
-    "prefix": "li-fe.ai",
-    "name": "li-fe.ai",
-    "claim": "Lisa & Felix – your digital life companions.",
-    "home": "li-fe.ai"
-  },
   "skip": "Skip to content",
-  "nav": {
-    "label": "Main navigation",
-    "lisa": "Lisa & Felix",
-    "method": "How it works",
-    "topics": "Topics",
-    "pricing": "Pricing",
-    "about": "About",
-    "safety": "Safety",
-    "faq": "FAQ",
-    "register": "Register",
-    "imprint": "Legal notice",
-    "privacy": "Privacy",
-    "open": "Open menu",
-    "close": "Close menu",
-    "switchTo": "Deutsch",
-    "switchLabel": "Zu Deutsch wechseln",
-    "home": "Home",
-    "account": "Register"
-  },
-  "cta": {
-    "interest": "Meet them free for 5 minutes",
-    "interestShort": "Start for free",
-    "start": "Meet them free for 5 minutes",
-    "startShort": "Start for free",
-    "more": "Find out more"
-  },
-  "band": {
-    "title": "Sometimes it helps simply to talk.",
-    "lead": "Talk to Lisa or Felix free for 5 minutes.",
-    "liveTitle": "Sometimes it helps simply to talk.",
-    "liveLead": "Talk to Lisa or Felix free for 5 minutes."
-  },
   "form": {
     "name": "Your name",
     "email": "Your email address",
@@ -62,17 +24,6 @@
       "send": "Unfortunately your message could not be sent. Please try again later.",
       "sendWithMail": "Unfortunately your message could not be sent. Please write to us directly at"
     }
-  },
-  "footer": {
-    "about": "Personal, interactive and always there – for more clarity, orientation and the confidence to act.",
-    "navTitle": "Explore",
-    "moreTitle": "More",
-    "crisisTitle": "Not an emergency service",
-    "crisisText": "li-fe.ai is no substitute for medical or psychotherapeutic help. In an acute crisis in Germany:",
-    "crisisEmergency": "Emergency",
-    "crisisCounselling": "TelefonSeelsorge",
-    "copyright": "© {year} li-fe.ai",
-    "tech": "Avatar technology by Persohap"
   },
   "notFound": {
     "title": "This page does not exist.",

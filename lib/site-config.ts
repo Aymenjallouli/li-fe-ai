@@ -19,18 +19,6 @@ export const SITE_URL = (
  */
 export const SITE_IS_LIVE = Boolean(process.env.NEXT_PUBLIC_SITE_URL);
 
-/**
- * The product app. Empty while the tool does not exist yet: every call to
- * action then leads to the interest form on this page. Set NEXT_PUBLIC_APP_URL
- * once Lisa is live and the same buttons open the free introductory
- * conversation instead — no component has to change.
- */
-export const APP_URL = (process.env.NEXT_PUBLIC_APP_URL || '').replace(/\/$/, '');
-
-export function appStartUrl(locale: string): string {
-  return `${APP_URL}/${locale === 'en' ? 'en' : 'de'}/register`;
-}
-
 /** Shown as the fallback contact when the form cannot send. */
 export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || '';
 
@@ -40,21 +28,6 @@ export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || '';
  */
 export const INTEREST_MAIL_TO = process.env.INTEREST_MAIL_TO || CONTACT_EMAIL;
 export const INTEREST_MAIL_FROM = process.env.INTEREST_MAIL_FROM || '';
-
-/**
- * Emergency contacts shown in the "Boundaries and safety" section, the FAQ and
- * the footer. These are public German services:
- *   112              European emergency number
- *   TelefonSeelsorge free of charge, around the clock
- */
-export const EMERGENCY = {
-  general: {display: '112', tel: '112'},
-  counselling: [
-    {display: '0800 111 0 111', tel: '08001110111'},
-    {display: '0800 111 0 222', tel: '08001110222'},
-    {display: '116 123', tel: '116123'},
-  ],
-} as const;
 
 /**
  * Provider details for the legal notice (§ 5 DDG) and the privacy policy.
