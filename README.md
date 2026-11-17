@@ -27,9 +27,12 @@ markup; `.dc` in `app/globals.css` shields it from every other style so only the
 The importer also fills two gaps the export leaves open: the two plans on the pricing page
 (Basic 59 €, Plus 99 €) and the footer's legal links.
 
-**Pictures of Lisa and Felix:** they come from the two files in `design-export/uploads/`
-(the transparent double portrait and the laptop/phone call mock-up). To change them, replace
-those files, run `python scripts/make-portraits.py`, then the importer again.
+**Pictures of Lisa and Felix:** Felix is the HeyGen LiveAvatar character "Matthew", Lisa is
+"Hannah" (the characters used in the live conversation). The transparent double
+portrait is `design-export/uploads/duo.png`, the catalogue stills are in `design-export/live/`.
+`python scripts/make-portraits.py` turns them into the hero portraits and the laptop/phone
+call screens; run the importer again afterwards. The call
+controls on the two screens are drawn by the importer.
 
 ## Pages
 

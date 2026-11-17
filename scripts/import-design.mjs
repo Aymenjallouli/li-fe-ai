@@ -92,17 +92,40 @@ function convert(html, locale) {
  *            site's legal pages. There is no terms page yet, so AGB goes to
  *            the legal notice too.
  */
+/* Call controls drawn over the laptop and phone screens. Sizes are in cqw
+   (share of the screen's width), so they scale with the device at any zoom. */
+const ICONS = {
+  mic: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/>',
+  cam: '<rect x="3" y="7" width="12" height="10" rx="2"/><path d="M15 11l6-3v8l-6-3z"/>',
+  end: '<path d="M2.5 14.2c5.4-5.2 13.6-5.2 19 0l-2.6 2.6-3.6-2v-2.6c-2.1-.7-4.5-.7-6.6 0v2.6l-3.6 2z" fill="#fff" stroke="none"/>',
+  people: '<circle cx="9" cy="9" r="3"/><path d="M3 19c0-3.3 2.7-5 6-5s6 1.700 6 5M16 6.500a3 3 0 0 1 0 5.500M17.500 14.500c2.200.600 3.500 2.100 3.500 4.500"/>',
+  chat: '<path d="M4 5h16v11H9l-5 4z"/>',
+  full: '<path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/>',
+  gear: '<circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.600 5.600l2.100 2.100M16.300 16.300l2.100 2.100M18.400 5.600l-2.100 2.100M7.700 16.300l-2.100 2.100"/>',
+};
+const callButton = (icon, size, bg = 'rgba(38,38,40,.86)') =>
+  `<span style="display:flex;align-items:center;justify-content:center;flex:none;width:${size}cqw;height:${size}cqw;border-radius:50%;background:${bg}"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:54%;height:54%">${ICONS[icon]}</svg></span>`;
+
+function callUi(device) {
+  const phone = device === 'phone';
+  const u = phone
+    ? {pad: 6, top: 9, font: 7.5, dot: 5, small: 13, btn: 13.5, end: 16, gap: 2.6, bottom: 7}
+    : {pad: 2.6, top: 2.6, font: 2.3, dot: 1.5, small: 4.6, btn: 5.8, end: 6.8, gap: 2.4, bottom: 3.6};
+  const timer = `<span style="position:absolute;left:${u.pad}cqw;top:${u.top}cqw;display:flex;align-items:center;gap:${u.dot * 0.8}cqw;padding:${u.font * 0.36}cqw ${u.font * 0.8}cqw;border-radius:99px;background:rgba(38,38,40,.86);font:600 ${u.font}cqw/1.2 'Quicksand',sans-serif;color:#fff;font-variant-numeric:tabular-nums"><span style="display:block;width:${u.dot}cqw;height:${u.dot}cqw;border-radius:50%;background:#34c759"></span>00:12</span>`;
+  const corner = `<span style="position:absolute;right:${u.pad}cqw;top:${u.top}cqw;display:flex;gap:${u.gap * 0.7}cqw">${callButton('full', u.small)}${phone ? '' : callButton('gear', u.small)}</span>`;
+  const self = phone
+    ? `<span style="position:absolute;right:${u.pad}cqw;bottom:${u.bottom + u.end + 5}cqw;display:block;width:27cqw;aspect-ratio:3/4;border-radius:4cqw;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.55),0 2px 8px rgba(0,0,0,.5);background:url(/design/assets/laptop.webp) 50% 20%/260% auto no-repeat"></span>`
+    : '';
+  const bar = `<span style="position:absolute;left:0;right:0;bottom:${u.bottom}cqw;display:flex;align-items:center;justify-content:center;gap:${u.gap}cqw">${callButton('mic', u.btn)}${callButton('cam', u.btn)}${callButton('end', u.end, '#ff3b30')}${callButton('people', u.btn)}${callButton('chat', u.btn)}</span>`;
+  return `<div style="position:absolute;inset:0;container-type:inline-size;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.22),transparent 24%,transparent 68%,rgba(0,0,0,.38))">${timer}${corner}${self}${bar}</div>`;
+}
+
 function fillIns(out, key, locale) {
-  if (key === 'home' && existsSync(join(SRC, 'assets', 'call.webp'))) {
-    // The export draws a laptop and a phone with CSS around two small
-    // pictures. One photographed call (scripts/make-portraits.py) replaces both.
-    const alt = locale === 'de'
-      ? 'Videogespräch mit Felix am Laptop und mit Lisa auf dem Smartphone'
-      : 'Video call with Felix on a laptop and with Lisa on a phone';
-    out = out.replace(
-      /<div style="flex:1 1 440px[\s\S]*?(?=<div style="flex:1 1 360px)/,
-      `<div style="flex:1 1 440px;min-width:0;display:flex;justify-content:center">\n    <img src="/design/assets/call.webp" alt="${alt}" width="1498" height="896" style="display:block;width:100%;max-width:560px;height:auto">\n  </div>\n  `,
-    );
+  if (key === 'home') {
+    // The export's laptop and phone show a bare picture. On the site they
+    // show a running call: timer, window buttons, call controls, self-view.
+    out = out.replace(/(<img src="\/design\/assets\/laptop\.[a-z]+"[^>]*>)/, `$1${callUi('laptop')}`);
+    out = out.replace(/(<img src="\/design\/assets\/phone\.[a-z]+"[^>]*>)/, `$1${callUi('phone')}`);
   }
   const en = locale === 'en';
   if (key === 'pricing') {
